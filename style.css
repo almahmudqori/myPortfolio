@@ -1,0 +1,114 @@
+:root {
+  /* color */
+  --color1: #222831; /*primary color */
+  --color2: #393e46; /*secondary color */
+  --color3: #00adb5; /*text color 1 */
+  --color4: #eeeeee; /*text color 2 */
+
+  /*font family */
+  --primayFont: "Poppins", sans-serif;
+  --logoFont: "Oswald", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1440px;
+  background-color: var(--color1);
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 96px;
+}
+.logo {
+  font-size: 24px;
+  font-family: var(--logoFont);
+  text-transform: capitalize;
+  color: var(--color4);
+  letter-spacing: 0em;
+}
+.navbar-nav {
+  display: flex;
+  gap: 48px;
+}
+.nav-link {
+  color: var(--color4);
+  font-family: var(--primayFont);
+  font-size: 18px;
+  font-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 180px;
+  padding-right: 79px;
+  gap: 81px;
+}
+.content-left {
+  width: 586px;
+  overflow: visible;
+  position: relative;
+}
+.content-left .imghero-left {
+  position: absolute;
+  left: -85px;
+  top: 143px;
+  transform: rotate(-10.49deg);
+  transform-origin: center;
+  z-index: 5;
+}
+.heading {
+  font-size: 95px;
+  color: var(--color3);
+  line-height: 86px;
+}
+.heading span {
+  color: var(--color4);
+  font-size: 86px;
+}
+.button {
+  display: flex;
+  padding: 48px 0;
+  gap: 10px;
+}
+.button_hero {
+  padding: 10px 32px;
+  font-size: 18px;
+  border-radius: 24px;
+  border: none;
+  color: var(--color4);
+  background-color: var(--color3);
+}
+.button_download {
+  padding: 10px 32px;
+  font-size: 18px;
+  border-radius: 24px;
+  border: none;
+  color: var(--color4);
+  background-color: var(--color2);
+  display: flex; /* Kuncinya di sini */
+  align-items: center; /* Menyejajarkan gambar dan teks secara vertikal */
+  justify-content: center; /* Menaruh semuanya di tengah tombol */
+  gap: 4px;
+}
+.button_download img {
+  display: block;
+}
+.img_hero1 {
+  width: 514;
+}
+.img_hero2 {
+  position: absolute;
+  left: 814px;
+  top: 187px;
+}
